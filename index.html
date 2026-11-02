@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>West Coast Tipping Point</title>
+<meta name="description" content="Protect the West Coast: working map of the case for a Strategic Environmental Assessment, better enforcement and a restorative economy on South Africa's West Coast, for discussion ahead of portfolio committee engagement.">
+<style>
+:root{
+  --bg:#f7f6f2; --card:#ffffff; --ink:#1d2327; --muted:#5d666d; --line:#d9d6cc;
+  --c1:#1f6f8b; --c2:#b5462f; --c3:#2b5fa8; --c4:#8a5a14; --c5:#2f7d4a; --c6:#6b4f9a;
+  --flag:#a15c00; --flagbg:#fff1d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15181a; --card:#1e2326; --ink:#e8e6df; --muted:#a3aaaf; --line:#343b40;
+    --c1:#5fb3cf; --c2:#e07a62; --c3:#7aa5e6; --c4:#d6a24f; --c5:#6cc28a; --c6:#a98bd6;
+    --flag:#f0b65a; --flagbg:#3a2c12;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15181a; --card:#1e2326; --ink:#e8e6df; --muted:#a3aaaf; --line:#343b40;
+  --c1:#5fb3cf; --c2:#e07a62; --c3:#7aa5e6; --c4:#d6a24f; --c5:#6cc28a; --c6:#a98bd6;
+  --flag:#f0b65a; --flagbg:#3a2c12;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:28px 16px 48px}
+header{text-align:center;margin-bottom:18px}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:600}
+.core{display:inline-block;background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:16px 22px;max-width:780px}
+.core h1{font-size:24px;line-height:1.25;margin:0 0 6px}
+.core p{margin:0;color:var(--muted)}
+.note{max-width:780px;margin:12px auto 0;font-size:13px;color:var(--muted)}
+.timing{max-width:900px;margin:14px auto 0;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:10px;padding:12px 16px;text-align:left;font-size:14px}
+.timing b{color:var(--c2)}
+.timing ol{margin:6px 0 0 18px;padding:0}
+.flag{display:inline-block;font-size:11px;font-weight:600;color:var(--flag);background:var(--flagbg);border-radius:4px;padding:0 5px;margin-left:4px;white-space:nowrap}
+.toolbar{text-align:center;margin:14px 0 18px}
+button{font:inherit;font-size:13px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 12px;cursor:pointer;margin:0 4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:16px}
+.branch{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:14px 16px}
+.branch h2{margin:0 0 8px;font-size:17px;color:var(--c)}
+.branch h2 small{display:block;font-size:12px;color:var(--muted);font-weight:500}
+details{border-top:1px solid var(--line);padding:6px 0}
+details:first-of-type{border-top:none}
+summary{cursor:pointer;font-weight:600;font-size:14px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";display:inline-block;width:16px;color:var(--c)}
+details[open] summary::before{content:"–"}
+ul{margin:4px 0 4px 16px;padding:0}
+li{margin:3px 0;font-size:14px}
+sup{font-size:10px;color:var(--muted)}
+.msg{font-style:italic;color:var(--muted);font-size:13px;margin:6px 0 2px}
+.asks{margin-top:18px;background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:16px}
+.asks h2{margin:0 0 10px;font-size:18px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px}
+.cols h3{margin:0 0 4px;font-size:15px}
+.cols p{margin:0 0 6px;color:var(--muted);font-size:13px}
+.sources{margin-top:18px;font-size:13px;color:var(--muted)}
+.sources h2{font-size:15px;color:var(--ink);margin:0 0 6px}
+.sources ol{margin:0 0 0 18px;padding:0}
+.sources a{color:var(--c1)}
+footer{margin-top:18px;font-size:12px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="kicker">Protect the West Coast · working map · October 2026</div>
+  <div class="core">
+    <h1>The West Coast at a tipping point</h1>
+    <p>Mining is approved one application at a time with no regional plan, the law that exists is not enforced, and the legacy is thousands of unrehabilitated hectares. The case: commission a Strategic Environmental Assessment, enforce the existing law, and back a restorative economy.</p>
+  </div>
+  <p class="note">A working map of the themes and evidence PTWC is drawing together for Parliament's portfolio committees. It is for the team's input and is not a formal PTWC submission. PTWC is not anti-mining: mining can and must happen, in the right places and within the law. Matters under appeal are described as PTWC contends them. Numbers in brackets refer to the sources at the foot of the page; <span class="flag">verify</span> marks points still to be sourced or checked.</p>
+  <div class="timing">
+    <b>Timeline.</b> Portfolio committees draft their programmes for the first term of 2027 over December and January.
+    <ol>
+      <li><b>By mid-November 2026:</b> send a brief to each committee chair, copied to the committee secretary, asking for a slot in February or March 2027.</li>
+      <li><b>9 to 20 November:</b> Environment committee members are at COP31, so letters sent then may wait until they return. The Environment committee gives briefing slots when a member asks, so going through a member may be quicker <sup>[13]</sup></li>
+<li><b>24 November:</b> the Environment committee meets on "paper parks", protected-area expansion and World Heritage Sites <sup>[13]</sup></li>
+<li><b>30 March 2027:</b> planned introduction of the Mineral Resources Development Bill, which will shape the Minerals committee's programme <sup>[13]</sup></li>
+      <li><b>17 and 18 February 2027:</b> PTWC presents at DFFE's State of Environment Information meeting, a trial run.</li>
+      <li><b>February to March 2027:</b> in-person presentations to both committees, with the film, the map and the Tipping Point.</li>
+    </ol>
+  </div>
+</header>
+<div class="toolbar"><button onclick="document.querySelectorAll('details').forEach(d=>d.open=true)">Expand all</button><button onclick="document.querySelectorAll('details').forEach(d=>d.open=false)">Collapse all</button></div>
+
+<div class="grid">
+
+<section class="branch" style="--c:var(--c1)">
+<h2>1 · No regional plan<small>Why a Strategic Environmental Assessment is needed</small></h2>
+<p class="msg">Mining has to happen, but some areas suit it and some should never be mined. Today any area can be applied for. An SEA would show which is which.</p>
+<details open><summary>The pressure is growing</summary><ul>
+<li>About 500 km of coastline from the Orange River to Cape Columbine; only about 10% formally protected <sup>[1]</sup></li>
+<li><b>Western Cape part of the West Coast</b> (11,844 km², every right and permit the DMPR has published): 26.6% of the land is or has been under mining or prospecting rights; 17.3% is under rights in force today <sup>[8]</sup></li>
+<li><b>Within 10 km of the shore</b> (whole West Coast): 37.7% is or has been under rights; 34.5% today <sup>[8]</sup></li>
+<li><b>Northern Cape:</b> PTWC monitors 91 rights and applications, but the DMPR publishes no Northern Cape records, so these figures are minimums and the true extent is ostensibly much larger <sup>[8]</sup></li>
+<li>48 new mining applications reported in three months in early 2026 <sup>[2]</sup></li>
+<li>Of about 100 West Coast mining and prospecting applications since 2020, two were refused outright <sup>[3]</sup></li>
+</ul></details>
+<details><summary>Cumulative impacts are not assessed</summary><ul>
+<li>"Applications are assessed on a project-by-project basis without sufficient consideration of regional context" or cumulative impacts <sup>[1]</sup></li>
+<li>A 164,000 ha offshore prospecting application (Sea Concession 11C): the applicant's own report recommended an SEA three times; it was approved <sup>[3]</sup></li>
+<li>PTWC contends the 32,000 ha Trans Hex prospecting authorisation did not assess the company's own mining rights in the same footprint <sup>[4]</sup></li>
+<li>Impacts reach beyond the footprint: an endemic lichen lost to sandblasting from upwind mine roads <sup>[1][9]</sup></li>
+</ul></details>
+<details><summary>Sensitive areas are mapped, then ignored</summary><ul>
+<li>Critical Biodiversity Areas (CBAs) and Ecological Support Areas are mapped, and DFFE's screening tool flags them and the studies they need. Mining is still authorised in them. What is the point of mapping them? <sup>[1]</sup></li>
+<li>Offshore, Ecologically or Biologically Significant Marine Areas (EBSAs) and fish nursery areas are in the same position <sup>[4]</sup></li>
+<li>Marine spatial planning, the national tool for deciding what goes where at sea, has been delayed; the Environment committee recorded that the delays were attributed particularly to the DMPR <sup>[13]</sup></li>
+<li>Tormin was authorised to mine inland in a CBA (2019) <sup>[1]</sup></li>
+<li>Trans Hex 32,000 ha: the applicant's own marine specialist recommended excluding sensitive areas, and two provincial authorities agreed in writing; the authorisation excluded nothing and gave no reasons <sup>[4]</sup></li>
+<li>Ntswatswa (Steinkopf): six of nine specialist studies flagged by the screening tool were not done <sup>[3]</sup></li>
+</ul></details>
+<details><summary>Authorised before the studies are done</summary><ul>
+<li>Authorisations are granted before the studies PTWC contends are needed, e.g. avifauna at Cape Nickel and the seabed at Trans Hex 13B <sup>[2]</sup></li>
+<li>The seafloor (benthic environment) is not sampled enough to know what prospecting and mining will do; the only baseline for the Trans Hex area is a desktop study drawing on 1999 and 2007 sources <sup>[4]</sup></li>
+<li>PTWC's position: a company that wants to mine must pay for a proper baseline first, and show how harm to the environment and communities will be avoided</li>
+</ul></details>
+<details><summary>Government has seen the need</summary><ul>
+<li>Western Cape DEA&amp;DP asked in 2021 for a strategic approach to West Coast mining applications <sup>[1]</sup></li>
+<li>On the 32,000 ha Trans Hex application, DEA&amp;DP recommended that CBAs be excluded, and CapeNature's letter of 17 July 2025 states that it "objects to the application" and asks that marine CBAs and the Olifants estuary be avoided. Nothing was excluded. DEA&amp;DP and Matzikama Municipality then appealed <sup>[4][12]</sup></li>
+<li>The state has already been asked, by court order, to consider a West Coast SEA. In 2022 the CER and MSR settled the CER's review of MSR's Tormin expansion authorisation, and the settlement was made an order of court. MSR had until 13 July 2022 to motivate to the environment department for a full SEA of the West Coast, to be commissioned and paid for by the department, covering the cumulative impacts of mining, prospecting and oil and gas, onshore and offshore. The review was stayed, not withdrawn. No SEA has followed <sup>[1][15]</sup> <span class="flag">order itself not on file; was MSR's motivation ever submitted?</span></li>
+</ul></details>
+</section>
+
+<section class="branch" style="--c:var(--c2)">
+<h2>2 · The law is there, enforcement is not<small>"Not a lack of law, but a failure of design, implementation and oversight" <sup>[1]</sup></small></h2>
+<p class="msg">Development at the cost of the environment and the people it is meant to serve is not development.</p>
+<details open><summary>The fox guarding the hen house</summary><ul>
+<li>The One Environmental System (2014) put mining and environmental authorisation under one authority, the DMPR, the department that promotes mining <sup>[1][3]</sup></li>
+<li>It was meant to streamline development; on the West Coast it is harming the environment and communities <sup>[1]</sup></li>
+<li>NEMA requires development to be socially, environmentally and economically sustainable, and the Constitution protects the right to an environment not harmful to health or well-being <sup>[1]</sup></li>
+<li>The Auditor-General found that the DMPR's Programme 2 has no compliance and enforcement indicator, and members cited "a lack of evidence of enforcement effectiveness across the mineral, petroleum and environmental mandates" (6 October 2026) <sup>[7][13]</sup></li>
+</ul></details>
+<details><summary>Closure obligations avoided</summary><ul>
+<li>Closure certificates are almost never issued; rights are transferred or renewed without checking compliance <sup>[1]</sup></li>
+<li>Mines are kept nominally "active", with a few staff and little activity, so closure and rehabilitation never fall due <span class="flag">PTWC observation: evidence needed</span></li>
+<li>Or the right passes to a smaller company and the rehabilitation is never done: De Beers to West Coast Resources and Kleinzee Holdings, with little mining or rehabilitation since <sup>[1]</sup></li>
+<li>Rehabilitation obligations reportedly reduced when De Beers transferred to Kleinzee Holdings <span class="flag">verify</span></li>
+<li>Legacy: De Beers backlog R435.5m (2011); Alexkor R203m (2019); Tormin liquidated and unrehabilitated <sup>[1]</sup></li>
+<li><b>Tormin, in the DMPR's own words:</b> the R20.1m financial guarantee was assessed as "insufficient"; the DMPR "has not called up the financial guarantee" and has set no date; there has been no inspection since the liquidation (last in May 2024), and "there is no time frame" for rehabilitation (replies to Parliament, August and September 2026) <sup>[13]</sup></li>
+<li>Alexkor rehabilitated 5.52 ha against a 75 ha target in 2025/26 <sup>[13]</sup></li>
+<li>Nationally, the DMPR puts the cost of rehabilitating derelict and ownerless mines at R35–45 billion, over more than ten years at current funding <sup>[13]</sup></li>
+</ul></details>
+<details><summary>Rehabilitation starts on day one</summary><ul>
+<li>"Successful rehabilitation starts at the beginning, when the first hole or trench is dug" <sup>[9]</sup></li>
+<li>The topsoil (top 5–10 cm) holds over 90% of the seed; it must be used at once, or stored for no more than 3 months; it is severely degraded after 6 months and has lost most of its value after a year <sup>[9]</sup></li>
+<li>Once topsoil is lost, restoration becomes almost 10 times more expensive and much less likely to succeed <sup>[9]</sup></li>
+<li>So leaving rehabilitation until a mine closes 30 years later is not technically feasible. The result is visible from Doringbaai to Alexander Bay, e.g. an abandoned Kleinzee mine still barren after more than 10 years <sup>[9]</sup></li>
+<li>PTWC's Rehabilitation Roadmap (with restoration ecologist Peter Carrick) sets out best practice. It could become a checklist the competent authority applies before granting an authorisation <sup>[9]</sup></li>
+</ul></details>
+<details><summary>Enforcement left to NGOs</summary><ul>
+<li>Richwill Diamonds: its Sea Concession 10A right is for non-invasive activities only, and its two applications either side of the provincial border are suspended by PTWC's appeals <sup>[10]</sup></li>
+<li>Local residents report cleared vegetation and roads, a fenced camp, equipment on the beach, a dump site and excavation <sup>[10]</sup></li>
+<li>PTWC wrote to the DMPR's inspectors (21 September) and its compliance and enforcement head office (21 October). The matter was referred to the regional offices; no outcome yet <sup>[10]</sup></li>
+<li>Kleinzee <span class="flag">unverified: community reports</span>:<ul>
+<li>Residents report beach mining under a converted De Beers mining right that, on its own terms, expired on 12 August 2023 <sup>[14]</sup></li>
+<li>They report mining extending past the historical mining boundary onto the public beach (Langstrand) and into the Buffelsrivier estuary, without topsoil being kept or a conservation permit, and say the DMPR has not responded to them <sup>[14]</sup></li>
+<li>PTWC asked Kleinzee Holdings and Blue Ocean Mining on 3 September for their mining right, EMPr, permits, rehabilitation plan and financial provision, and followed up on 14 September; no reply received <sup>[14]</sup></li>
+</ul></li>
+<li>Enforcement is the DMPR's mandate. Without PTWC and the public, this activity would go unreported</li>
+</ul></details>
+<details><summary>Process</summary><ul>
+<li>Appeals can take up to two years against a 50-day regulation <sup>[1]</sup></li>
+<li>Public participation: limited notice, inaccessible documents, poorly attended meetings <sup>[1][4]</sup></li>
+<li>A public cadastre was promised for years. By June 2026 the Western Cape had moved fully onto the DMPR's new minerals cadastre (the Mining Licence System); the Director-General targets the whole country by 31 March 2027, with the Free State, KwaZulu-Natal and the Eastern Cape next. The Northern Cape is not yet on it <sup>[16]</sup> <span class="flag">verify how many years it was promised</span></li>
+<li>In its absence, PTWC built its own: the interactive map, from every source available to it (see block 6) <sup>[8]</sup></li>
+</ul></details>
+</section>
+
+<section class="branch" style="--c:var(--c3)">
+<h2>3 · Offshore: the new frontier<small>Seabed mining with little baseline science</small></h2>
+<details open><summary>Nobody knows how long recovery takes</summary><ul>
+<li>"There are no feasible mitigation measures for seabed excavation and tailings disposal" <sup>[1]</sup></li>
+<li>The 10 to 15 year recovery figure for large-scale seabed mining rests on old studies (2001) <sup>[1]</sup>; PTWC's geologist considers recovery likely to take longer <span class="flag">source</span></li>
+<li>The baselines and samples needed to know have not been collected, or are not public</li>
+</ul></details>
+<details><summary>What is at stake</summary><ul>
+<li>The Benguela system: 30 to 65 times the global average productivity <sup>[1]</sup></li>
+<li>The Namaqua Fossil Forest Marine Protected Area <sup>[4]</sup></li>
+<li>Court-ordered no-go areas at the Olifants River estuary (2023) <sup>[4]</sup></li>
+</ul></details>
+</section>
+
+<section class="branch" style="--c:var(--c4)">
+<h2>4 · People and livelihoods<small>The human element, throughout the presentation</small></h2>
+<p class="msg">West Coast people depend on the coast to eat and to earn an income, in a region with very few other opportunities.</p>
+<details open><summary>Fishing</summary><ul>
+<li>Mining blocks access to the coast and limits small-scale fishers' access to marine resources <sup>[1]</sup></li>
+<li>Small-scale fishers from Doringbaai, Ebenhaeser and Papendorp are among the appellants against the Trans Hex authorisation <sup>[4]</sup></li>
+<li>Trans Hex 32,000 ha prospecting, as PTWC contends on appeal <sup>[12]</sup>:<ul>
+<li>315 registered small-scale fishers live in the four nearest communities (Doringbaai, Papendorp, Ebenhaeser, Lutzville Wes)</li>
+<li>The applicant's own socio-economic specialist recorded that one informant put about 90% of Doringbaai households as dependent on fishing or marine resources; that losing that income drives school dropouts; and that fishers link falling snoek and rock lobster catches to mining in the same concessions</li>
+<li>The final report still rated the impact as "low" (social functions "negligibly altered"), with notifying fishing associations and issuing navigational warnings as the only mitigation</li>
+<li>The impact on the communities' cultural and spiritual attachment to the sea was identified, then dismissed without reasons</li>
+<li>The authorisation's whole reasoning on socio-economic impacts is a single sentence</li>
+</ul></li>
+</ul></details>
+<details><summary>Tourism</summary><ul>
+<li>A thriving, beautiful coast draws visitors. A mined-out moonscape does not: fewer visitors, damaged livelihoods, a coastline "increasingly unviable" for low-impact recreation <sup>[1]</sup></li>
+</ul></details>
+<details><summary>Jobs claims and reality</summary><ul>
+<li>Most West Coast operations employ fewer than 500 people over their life; Tormin about 321 in 2023 <sup>[1]</sup></li>
+<li>Alexander Bay and Kleinzee: mining towns in decline <sup>[1]</sup></li>
+</ul></details>
+<details><summary>Heritage</summary><ul>
+<li>Shell middens, unmarked graves, a 1,000-year-old burial exposed by mining <sup>[1]</sup></li>
+</ul></details>
+<details><summary>What works</summary><ul>
+<li>The Whale Head Minerals agreement restored fishers' access to traditional fishing grounds, with a funded rehabilitation plan and an independent marine scientist <sup>[2]</sup></li>
+</ul></details>
+</section>
+
+<section class="branch" style="--c:var(--c5)">
+<h2>5 · A restorative economy<small>Nature-based solutions alongside properly regulated mining</small></h2>
+<details open><summary>Restoration as work</summary><ul>
+<li>Large-scale restoration of mined land as a jobs programme <sup>[1]</sup></li>
+<li>The Rehabilitation Roadmap with restoration ecologist Peter Carrick <sup>[9]</sup></li>
+</ul></details>
+<details><summary>Blue and green industries</summary><ul>
+<li>Kelp farming, aquaculture, algae-based industries <sup>[1]</sup></li>
+<li>A West Coast tourism master plan: botanical, palaeontological, cultural and dark-sky tourism <sup>[1]</sup></li>
+<li>Protected-area expansion with permanent local jobs <sup>[1]</sup></li>
+</ul></details>
+<details><summary>Recognition and accounting</summary><ul>
+<li>Elands Bay World Surfing Reserve application, which would be Africa's first <sup>[5]</sup></li>
+<li>Natural capital accounting, as committed to in the Gaborone Declaration (2012) <sup>[1]</sup></li>
+</ul></details>
+</section>
+
+<section class="branch" style="--c:var(--c6)">
+<h2>6 · Who PTWC is<small>Track record, and what we will show</small></h2>
+<details open><summary>Legal and science work</summary><ul>
+<li><b>52 applications commented on and 19 appeals lodged</b>, 37 and 14 of them in 2026 <sup>[8]</sup></li>
+<li>Two applications withdrawn by the applicant after PTWC appeals; one appeal settled by a binding agreement (Whale Head) <sup>[2][8]</sup></li>
+<li>2023 court order: no-go areas around the Olifants River estuary <sup>[2]</sup></li>
+<li>The Tipping Point special report (56 pages, March 2026) <sup>[1]</sup></li>
+</ul></details>
+<details open><summary>Show, don't tell</summary><ul>
+<li><b>The interactive map:</b> PTWC's own cadastre, built from the DMPR's Western Cape records and PTWC's monitoring; the scale of the problem on one screen <sup>[8]</sup></li>
+<li><b>The film <em>Out of Mined</em></b> (the 60-minute or the 13-minute version), with aerial footage of the unrehabilitated coast; over 1,000 people at the Cape Town premiere; a Work in Progress award at the Cannes Film Awards <sup>[6]</sup></li>
+<li><a href="https://www.ripl.co.za">Ripl</a>, a public participation platform in English and Afrikaans: 1,281 registered users and 59 current applications (37 Northern Cape, 22 Western Cape), as at 31 October 2026 <sup>[11]</sup></li>
+</ul></details>
+</section>
+
+</div>
+
+<section class="asks">
+<h2>7 · Possible asks of the portfolio committees</h2>
+<div class="cols">
+<div><h3 style="color:var(--c1)">Forestry, Fisheries and the Environment</h3><p>Plan before you permit</p><ul>
+<li>A West Coast SEA and regional cumulative impact assessment to identify where mining can and cannot go, with a time-bound pause on new approvals meanwhile</li>
+<li>CBAs, ESAs and EBSAs given effect in decisions, not only on maps</li>
+<li>Baseline studies, including benthic sampling, before any authorisation</li>
+<li>Faster appeal decisions</li>
+<li>Nature-based solutions as funded climate adaptation; protected areas</li>
+</ul></div>
+<div><h3 style="color:var(--c2)">Mineral and Petroleum Resources</h3><p>Enforce the law that exists</p><ul>
+<li>Oversight of inspections, audits and closure certificates on the West Coast, and action on reported unauthorised mining</li>
+<li>Rehabilitation plans checked against best practice before authorisation; financial provision enforced; no transfer or renewal before rehabilitation is verified</li>
+<li>Legacy liabilities: Tormin, De Beers, Alexkor</li>
+<li>The Mining Licence System extended to the Northern Cape, within the DMPR's own 31 March 2027 target <sup>[16]</sup></li>
+</ul></div>
+<div><h3>Both committees</h3><p>Ask the departments for the numbers</p><ul>
+<li>Applications, approvals and refusals since 2020</li>
+<li>Appeals pending and decision times</li>
+<li>Inspections, closure certificates, financial provision held</li>
+</ul></div>
+</div>
+</section>
+
+<section class="sources">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://protectthewestcoast.org/wp-content/uploads/2026/07/PTWC_Special-Report_2026_Digital_FA.pdf">PTWC, The Tipping Point special report (2026)</a></li>
+<li><a href="https://protectthewestcoast.org/wp-content/uploads/2026/05/PTWC-Annual-Impact-Report-2025-26-300426.pdf">PTWC, Annual Impact Report 2025-26</a>, including the media coverage it lists</li>
+<li><a href="https://protectthewestcoast.org/post/legal-update-flurry-of-five-eas-exposes-fault-lines-in-mining-process/">PTWC, "Flurry of five EAs exposes fault lines in mining process" (3 Sep 2026)</a></li>
+<li><a href="https://protectthewestcoast.org/post/ptwc-appeals-32000-hectare-trans-hex-west-coast-offshore-prospecting-authorisation/">PTWC, "PTWC appeals 32,000 hectare Trans Hex offshore prospecting authorisation" (1 Oct 2026)</a></li>
+<li><a href="https://protectthewestcoast.org/post/ptwc-announces-plan-to-create-africas-first-world-surfing-reserve-on-the-west-coast/">PTWC, World Surfing Reserve announcement (1 Oct 2026)</a></li>
+<li><a href="https://protectthewestcoast.org/post/ptwc-film-out-of-mined-continues-to-make-waves-around-the-world/">PTWC, "Out of Mined continues to make waves around the world" (1 Oct 2026)</a></li>
+<li>Portfolio Committee on Mineral and Petroleum Resources, Budgetary Review and Recommendation Report, ATC261014 (13 Oct 2026), recording Auditor-General findings</li>
+<li>PTWC Mining Applications Register: submissions log, and West Coast mining statistics (public register, 28 Oct 2026), drawing on the DMPR Mining Licence System</li>
+<li>Engelbrecht &amp; Carrick, Roadmap to successful rehabilitation on the West Coast (PTWC field guide, unpublished draft, 2026)</li>
+<li>PTWC correspondence with the DMPR, September and October 2026 (internal)</li>
+<li><a href="https://www.ripl.co.za">ripl.co.za</a>, 31 Oct 2026; user count from Ripl analytics</li>
+<li>PTWC, appeal against the Trans Hex Heavy Minerals Mining prospecting authorisation, WC 30/5/1/1/2/10474 PR (revised, 31 Aug 2026), Grounds 5 and 12 (internal)</li>
+<li>Parliamentary Monitoring Group (pmg.org.za): replies to questions NW4261 and NW4262 (Tormin, Aug and Sep 2026); PC MPR meetings of 21 Apr, 29 Sep, 6 Oct and 13 Oct 2026; PC FFE 2025 BRRR and programme; reply to NW5084 (MRD Bill). Links in PTWC's research note</li>
+<li>Community correspondence to PTWC on Kleinzee mining (31 Aug 2026), and PTWC's letters to Kleinzee Holdings and Blue Ocean Mining (3 and 14 Sep 2026) (internal)</li>
+<li><a href="https://protectthewestcoast.org/post/west-coast-breakthrough-environment-activists-and-mining-company-reach-agreement/">PTWC, "West Coast breakthrough: environment activists and mining company reach agreement" (27 Jun 2022)</a>; CER, <a href="https://cer.org.za/programmes/corporate-accountability/litigation/cer-challenges-to-msrs-tormin-mine-on-the-west-coast-of-south-africa">CER challenges to MSR's Tormin mine</a> (case papers 2020-2021)</li>
+<li><a href="https://miningmx.com/news/markets/2026-06-09-cadastre-to-be-rolled-out-within-a-year-says-dmpr-s-mbele/">Miningmx, "Cadastre to be rolled out within a year, says DMPR's Mbele" (9 Jun 2026)</a></li>
+</ol>
+</section>
+
+<footer>Protect the West Coast NPC · <a href="https://protectthewestcoast.org" style="color:inherit">protectthewestcoast.org</a> · working draft for team input, October 2026</footer>
+</main>
+</body>
+</html>
